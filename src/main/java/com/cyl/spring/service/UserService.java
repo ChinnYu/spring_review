@@ -1,6 +1,7 @@
 package com.cyl.spring.service;
 
 import com.cyl.spring.dao.IuserDao;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author : Liu
@@ -16,9 +17,11 @@ public class UserService implements IUserService{
         return userDao;
     }
 
+    @Autowired
     public void setUserDao(IuserDao userDao) {
         this.userDao = userDao;
     }
+
 
     public UserService(IuserDao userDao) {
         this.userDao = userDao;

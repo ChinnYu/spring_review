@@ -5,12 +5,11 @@
 
     <!--管理bean-->
     <!--具體給程序注入甚麼類,可以通過配置-->
-    <bean id="userService" class="com.cyl.spring.service.UserService" scope="singleton" autowire="constructor">
-        <!--通過setter 方法注入-->
-        <!--<property name="userDao" ref="userDao"/>-->
-        <!--構造方法式注入-->
-        <!--<constructor-arg name="userDao" ref="userDao"></constructor-arg>-->
-    </bean>
+    <!--自動裝配,省去關聯關係的設置
+     autowire="constructor":通過構造方法的方式來幫我們裝配
+
+     -->
+    <bean id="userService" class="com.cyl.spring.service.UserService" scope="singleton" autowire="byType"></bean>
     <!--spring 要幫你做甚麼事情 前提你都歸他管-->
     <bean id="userDao" class="com.cyl.spring.dao.UserDao"/>
 </beans>

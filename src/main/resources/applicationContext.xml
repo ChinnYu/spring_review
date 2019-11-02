@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byType">
 
     <!--管理bean-->
     <!--具體給程序注入甚麼類,可以通過配置-->
-    <bean id="userService" class="com.cyl.spring.service.UserService" scope="singleton" >
-        <!--通過setter 方法注入-->
-        <!--<property name="userDao" ref="userDao"/>-->
-        <!--構造方法式注入-->
-        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
-    </bean>
+    <!--自動裝配,省去關聯關係的設置
+     autowire="constructor" : 通過構造方法的方式來幫我們裝配
+     autowire="byType" : 通過setter的方式來幫我們裝配
+     autowire="byName" : 通過setter的方式來幫我們裝配
+     差別:
+     byType:類型
+     byName: 看id
+     -->
+    <bean id="userService" class="com.cyl.spring.service.UserService" scope="singleton" autowire="byName"></bean>
     <!--spring 要幫你做甚麼事情 前提你都歸他管-->
     <bean id="userDao" class="com.cyl.spring.dao.UserDao"/>
 </beans>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--管理bean-->
+    <!--具體給程序注入甚麼類,可以通過配置-->
+    <bean id="userService" class="com.cyl.spring.service.UserService2"></bean>
+</beans>

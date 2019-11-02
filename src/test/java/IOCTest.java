@@ -18,4 +18,20 @@ public class IOCTest {
         IUserService userService = ctx.getBean(IUserService.class);
         userService.add();
     }
+
+    @Test
+    public void staticFactoryTest(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        IUserService userService =  (IUserService) ctx.getBean("userService");
+        IUserService userService = (IUserService) ctx.getBean("userServiceByStaticFactory");
+        userService.add();
+    }
+
+    @Test
+    public void FactoryTest(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        IUserService userService =  (IUserService) ctx.getBean("userService");
+        IUserService userService = (IUserService) ctx.getBean("userServiceByFactory");
+        userService.add();
+    }
 }

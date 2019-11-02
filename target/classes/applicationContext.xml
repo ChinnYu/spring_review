@@ -4,5 +4,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--管理bean-->
+    <!--具體給程序注入甚麼類,可以通過配置-->
     <bean id="userService" class="com.cyl.spring.service.UserService2"></bean>
+
+    <!--靜態工廠-->
+    <bean id="userServiceByStaticFactory" class="com.cyl.spring.factory.UserServiceStaticFactory" factory-method="getInstance"></bean>
+
+    <!--通過工廠來創建-->
+    <!--先聲明工廠-->
+    <!--與靜態差別就是要先創工廠而已-->
+    <bean id="userServiceFactory" class="com.cyl.spring.factory.UserServiceFactory"/>
+    <!--通過工廠來創-->
+    <bean id="userServiceByFactory" factory-bean="userServiceFactory" factory-method="getInstance"/>
 </beans>

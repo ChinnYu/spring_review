@@ -7,9 +7,7 @@
         http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
     <!--開啟註解模式-->
-    <context:annotation-config/>
-
-    <bean id="userService" class="com.cyl.spring.service.UserService" scope="singleton" autowire="byName"></bean>
-    <!--spring 要幫你做甚麼事情 前提你都歸他管-->
-    <bean id="userDao" class="com.cyl.spring.dao.UserDao"/>
+    <!--<context:annotation-config/>-->
+    <!--開啟掃苗-->
+    <context:component-scan base-package="com.cyl.spring"/>
 </beans>

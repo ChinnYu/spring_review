@@ -12,27 +12,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserService implements IUserService{
 
-    private IuserDao userDao;
 
-    public IuserDao getUserDao() {
-        return userDao;
-    }
-
-    @Autowired
-    public void setUserDao(IuserDao userDao) {
-        this.userDao = userDao;
-    }
-
-
-    public UserService(IuserDao userDao) {
-        this.userDao = userDao;
-    }
-
-    public UserService() {
-
-    }
     public void add() {
         System.out.println("add");
-        userDao.add();
+//        userDao.add();
+    }
+
+    public void other() {
+        System.out.println("oadd");
     }
 }

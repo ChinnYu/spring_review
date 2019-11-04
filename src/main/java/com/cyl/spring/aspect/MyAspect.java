@@ -15,15 +15,14 @@ import org.springframework.stereotype.Component;
  */
 
 
-@Aspect
-@Component
+
 public class MyAspect {
-    @Before("execution(* com.cyl.spring.service.impl.*.*(..))")
+
     public void before(){
         System.out.println("前置增強,比如創建連接對象");
     }
 
-    @After("execution(* com.cyl.spring.service.impl.UserService.*(..))")
+
     public void after(){
         System.out.println("後置增強,比如關閉連接對象");
     }

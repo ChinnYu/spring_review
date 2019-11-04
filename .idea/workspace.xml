@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="456e9ff8-f1a1-488f-9853-b157d665f356" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_hello_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_hello_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/IuserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/handler/CGlibHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/handler/MyInvocationHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/IServerManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/OtherManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/TransactionManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProxyTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/dao/IuserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/handler/CGlibHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/handler/MyInvocationHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/server/IServerManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/server/OtherManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/server/TransactionManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ProxyTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,16 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+            <state relative-caret-position="283">
+              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -53,41 +40,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SpringAOPTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="486">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/config/AppConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="80" column="37" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -135,10 +92,10 @@
         <option value="$PROJECT_DIR$/src/test/java/ProxyTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SpringAOPTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -199,6 +156,24 @@
               <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="aspect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,7 +200,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572851789192" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572858172305" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -255,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringAOPTest.aopTest2">
+  <component name="RunManager" selected="JUnit.SpringAOPTest.aopTest">
     <configuration name="IOCTest.DITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_hello" />
       <option name="PACKAGE_NAME" value="" />
@@ -308,8 +283,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringAOPTest.aopTest2" />
         <item itemvalue="JUnit.SpringAOPTest.aopTest" />
+        <item itemvalue="JUnit.SpringAOPTest.aopTest2" />
         <item itemvalue="JUnit.ProxyTest.proxyTest" />
         <item itemvalue="JUnit.ProxyTest.proxyTest2" />
         <item itemvalue="JUnit.IOCTest.DITest" />
@@ -326,17 +301,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572690415912</updated>
-      <workItem from="1572690419505" duration="32247000" />
+      <workItem from="1572690419505" duration="34988000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProxyTest_proxyTest - 2019.11.03 at 20h 07m 49s.xml">
-      <configuration name="ProxyTest.proxyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 13h 30m 59s.xml">
-      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 13h 31m 53s.xml">
       <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
     </history-entry>
@@ -361,9 +330,15 @@
     <history-entry file="SpringAOPTest_aopTest2 - 2019.11.04 at 14h 40m 47s.xml">
       <configuration name="SpringAOPTest.aopTest2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 16h 25m 07s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 16h 25m 32s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32247000" />
+    <option name="totallyTimeSpent" value="34988000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,6 +351,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -579,28 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SpringAOPTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -620,8 +574,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="168">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SpringAOPTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

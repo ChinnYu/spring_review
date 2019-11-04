@@ -14,8 +14,24 @@
     <!--開啟掃苗-->
     <context:component-scan base-package="com.cyl.spring"/>
     <!--<aop:aspectj-autoproxy/>-->
+    <!--配置DBCP-->
+    <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/1803_hibernate"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123"/>
+    </bean>
+    <!--配置JdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg name="dataSource" ref="datasource"/>
+    </bean>
+    <bean id="teacherDao" class="com.cyl.spring.dao.impl.TeacherDao">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+
     <!--配置一切面類-->
-    <bean id="myAspect" class="com.cyl.spring.aspect.MyAspect"></bean>
+    <bean id="myAspect" class="com.cyl.spring.aspect.MyAspect"/>
     <aop:config>
         <aop:pointcut id="myPointCut" expression="execution(* com.cyl.spring.service.impl.*.*(..))"/>
         <aop:aspect ref="myAspect">

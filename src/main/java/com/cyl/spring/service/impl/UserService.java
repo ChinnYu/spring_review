@@ -1,6 +1,7 @@
-package com.cyl.spring.service;
+package com.cyl.spring.service.impl;
 
-import com.cyl.spring.dao.IuserDao;
+
+import com.cyl.spring.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @Description :
  */
 @Component
-public class UserService implements IUserService{
+public class UserService implements IUserService {
 
 
     public void add() {

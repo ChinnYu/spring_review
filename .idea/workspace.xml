@@ -5,10 +5,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_hello_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_hello_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/IOCTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/IOCTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ProxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ProxyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/IuserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/handler/CGlibHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/handler/MyInvocationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/IServerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/OtherManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/TransactionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProxyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/dao/IuserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/handler/CGlibHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/handler/MyInvocationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/server/IServerManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/server/OtherManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/server/TransactionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ProxyTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,14 +37,48 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/handler/CGlibHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+            <state relative-caret-position="352">
+              <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SpringAOPTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/config/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="80" column="37" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -36,20 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ProxyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="448">
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -84,20 +122,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/IuserDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/IOCTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/IServerManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/TransactionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/server/OtherManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/IUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/proxy/UserServiceStaticProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/IOtherService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/OtherServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/handler/MyInvocationHandler.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/NoIneterService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/handler/CGlibHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/ProxyTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SpringAOPTest.java" />
       </list>
     </option>
   </component>
@@ -158,43 +199,6 @@
               <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,7 +225,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572782872289" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572851789192" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -233,6 +237,7 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.cyl.spring.service" />
       <recent name="com.cyl.spring.server" />
       <recent name="com.cyl.spring.factory" />
@@ -250,32 +255,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProxyTest.proxyTest">
+  <component name="RunManager" selected="JUnit.SpringAOPTest.aopTest2">
     <configuration name="IOCTest.DITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_hello" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="IOCTest" />
       <option name="METHOD_NAME" value="DITest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IOCTest.FactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_hello" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IOCTest" />
-      <option name="METHOD_NAME" value="FactoryTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IOCTest.staticFactoryTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_hello" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IOCTest" />
-      <option name="METHOD_NAME" value="staticFactoryTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -301,13 +286,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringAOPTest.aopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_hello" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpringAOPTest" />
+      <option name="METHOD_NAME" value="aopTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringAOPTest.aopTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_hello" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpringAOPTest" />
+      <option name="METHOD_NAME" value="aopTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringAOPTest.aopTest2" />
+        <item itemvalue="JUnit.SpringAOPTest.aopTest" />
         <item itemvalue="JUnit.ProxyTest.proxyTest" />
         <item itemvalue="JUnit.ProxyTest.proxyTest2" />
         <item itemvalue="JUnit.IOCTest.DITest" />
-        <item itemvalue="JUnit.IOCTest.FactoryTest" />
-        <item itemvalue="JUnit.IOCTest.staticFactoryTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -321,44 +326,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572690415912</updated>
-      <workItem from="1572690419505" duration="24555000" />
+      <workItem from="1572690419505" duration="32247000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IOCTest_DITest - 2019.11.03 at 00h 04m 30s.xml">
-      <configuration name="IOCTest.DITest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProxyTest_proxyTest - 2019.11.03 at 15h 46m 04s.xml">
-      <configuration name="ProxyTest.proxyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProxyTest_proxyTest - 2019.11.03 at 16h 49m 06s.xml">
-      <configuration name="ProxyTest.proxyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProxyTest_proxyTest - 2019.11.03 at 16h 50m 39s.xml">
-      <configuration name="ProxyTest.proxyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProxyTest_proxyTest - 2019.11.03 at 17h 41m 42s.xml">
-      <configuration name="ProxyTest.proxyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProxyTest_proxyTest2 - 2019.11.03 at 17h 45m 29s.xml">
-      <configuration name="ProxyTest.proxyTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProxyTest_proxyTest2 - 2019.11.03 at 17h 45m 55s.xml">
-      <configuration name="ProxyTest.proxyTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProxyTest_proxyTest2 - 2019.11.03 at 18h 05m 40s.xml">
-      <configuration name="ProxyTest.proxyTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProxyTest_proxyTest - 2019.11.03 at 20h 07m 39s.xml">
-      <configuration name="ProxyTest.proxyTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProxyTest_proxyTest - 2019.11.03 at 20h 07m 49s.xml">
       <configuration name="ProxyTest.proxyTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 13h 30m 59s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 13h 31m 53s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 13h 59m 24s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 14h 00m 03s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 14h 10m 44s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 14h 12m 08s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 14h 33m 12s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest - 2019.11.04 at 14h 38m 05s.xml">
+      <configuration name="SpringAOPTest.aopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringAOPTest_aopTest2 - 2019.11.04 at 14h 40m 47s.xml">
+      <configuration name="SpringAOPTest.aopTest2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24555000" />
+    <option name="totallyTimeSpent" value="32247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,7 +376,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -379,7 +383,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14072494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14072494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.329718" />
@@ -391,7 +395,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -469,13 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/proxy/UserServiceStaticProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -486,48 +483,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/OtherServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/server/TransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/IOtherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/server/IServerManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -551,20 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="74" column="42" lean-forward="true" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/NoIneterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/handler/CGlibHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -578,7 +523,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ProxyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="258">
           <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -586,10 +531,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/server/TransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/OtherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/NoIneterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/IOtherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SpringAOPTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        <state relative-caret-position="448">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>

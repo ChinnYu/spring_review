@@ -26,10 +26,10 @@
         <constructor-arg name="dataSource" ref="datasourceId"/>
     </bean>
 
-    <bean id="teacherDao" class="com.cyl.spring.dao.impl.TeacherDao">
-        <!--<property name="jdbcTemplate" ref="jdbcTemplate"/>-->
-        <property name="dataSource" ref="datasourceId"/>
-    </bean>
+    <!--<bean id="teacherDao" class="com.cyl.spring.dao.impl.TeacherDao">-->
+        <!--&lt;!&ndash;<property name="jdbcTemplate" ref="jdbcTemplate"/>&ndash;&gt;-->
+        <!--<property name="dataSource" ref="datasourceId"/>-->
+    <!--</bean>-->
 
 
     <!--配置一切面類-->

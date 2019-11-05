@@ -15,7 +15,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class TeacherDao extends JdbcDaoSupport implements ITeacherDao {
 
-
+    @Autowired
+    public void setJ(JdbcTemplate jdbcTemplate){
+        super.setJdbcTemplate(jdbcTemplate);
+    }
 
     public void add(Teacher teacher) {
         this.getJdbcTemplate().update("insert into t_teacher(name) values (?)",teacher.getName());

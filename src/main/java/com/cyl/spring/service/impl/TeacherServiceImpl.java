@@ -6,6 +6,7 @@ import com.cyl.spring.service.ITeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionTemplate;
 
@@ -15,6 +16,7 @@ import org.springframework.transaction.support.TransactionTemplate;
  * @Description :
  */
 @Component
+
 public class TeacherServiceImpl implements ITeacherService {
 
 //    @Autowired
@@ -22,7 +24,7 @@ public class TeacherServiceImpl implements ITeacherService {
 
     @Autowired
     private ITeacherDao teacherDao;
-
+    @Transactional()
     public void add() {
 //        transactionTemplate.execute(new TransactionCallback<Object>() {
 //

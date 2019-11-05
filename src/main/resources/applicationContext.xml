@@ -24,7 +24,7 @@
         <property name="user" value="root"/>
         <property name="password" value="123"/>
     </bean>
-    配置JdbcTemplate
+    <!--配置JdbcTemplate-->
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <constructor-arg name="dataSource" ref="datasourceId"/>
     </bean>
@@ -33,20 +33,8 @@
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="datasourceId"/>
     </bean>
-    
 
-    <!--2.配置事務策略-->
-    <tx:advice id="txAdvice" transaction-manager="transactionManager">
-        <tx:attributes>
-            <tx:method name="get*" read-only="true"/>
-            <tx:method name="list*" read-only="true"/>
-            <tx:method name=""/>
-        </tx:attributes>
-    </tx:advice>
-    
-    <!--3.配置事務控制的範圍-->
-    <aop:config>
-        <aop:pointcut id="fooService" expression="execution(* com.cyl.spring.service.*.*(..))"/>
-        <aop:advisor advice-ref="txAdvice" pointcut-ref="fooService"/>
-    </aop:config>
+    <!--開啟註解式的事務控制-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
 </beans>

@@ -15,18 +15,20 @@
     <context:component-scan base-package="com.cyl.spring"/>
     <!--<aop:aspectj-autoproxy/>-->
     <!--配置DBCP-->
-    <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/1803_hibernate"/>
-        <property name="username" value="root"/>
+    <bean id="datasourceId" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/1803_hibernate"/>
+        <property name="user" value="root"/>
         <property name="password" value="123"/>
     </bean>
     <!--配置JdbcTemplate-->
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <constructor-arg name="dataSource" ref="datasource"/>
+        <constructor-arg name="dataSource" ref="datasourceId"/>
     </bean>
+
     <bean id="teacherDao" class="com.cyl.spring.dao.impl.TeacherDao">
-        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+        <!--<property name="jdbcTemplate" ref="jdbcTemplate"/>-->
+        <property name="dataSource" ref="datasourceId"/>
     </bean>
 
 

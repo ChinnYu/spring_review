@@ -1,6 +1,7 @@
 import com.cyl.spring.dao.ITeacherDao;
 import com.cyl.spring.dao.impl.TeacherDao;
 import com.cyl.spring.entity.Teacher;
+import com.cyl.spring.service.ITeacherService;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -68,5 +69,13 @@ public class JdbcTemplateTest {
         Teacher teacher = new Teacher();
         teacher.setName("xqc");
         teacherDao.add(teacher);
+    }
+
+    @Test
+    public void txTest(){
+        //DBCP
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ITeacherService teacherService = ctx.getBean(ITeacherService.class);
+        teacherService.add();
     }
 }

@@ -26,10 +26,16 @@
         <constructor-arg name="dataSource" ref="datasourceId"/>
     </bean>
 
-    <!--<bean id="teacherDao" class="com.cyl.spring.dao.impl.TeacherDao">-->
-        <!--&lt;!&ndash;<property name="jdbcTemplate" ref="jdbcTemplate"/>&ndash;&gt;-->
-        <!--<property name="dataSource" ref="datasourceId"/>-->
-    <!--</bean>-->
+    <!--1.配置事務管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="datasourceId"/>
+    </bean>
+
+    <!--2.配置事務模板對象-->
+    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="transactionManager"/>
+    </bean>
+
 
 
     <!--配置一切面類-->

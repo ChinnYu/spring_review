@@ -3,11 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-4.3.xsd
         http://www.springframework.org/schema/aop
-        http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+        http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
     <!--開啟註解模式-->
     <!--<context:annotation-config/>-->
@@ -22,29 +25,28 @@
         <property name="password" value="123"/>
     </bean>
     <!--配置JdbcTemplate-->
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <constructor-arg name="dataSource" ref="datasourceId"/>
-    </bean>
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+        <!--<constructor-arg name="dataSource" ref="datasourceId"/>-->
+    <!--</bean>-->
 
     <!--1.配置事務管理器-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="datasourceId"/>
     </bean>
+    
 
-    <!--2.配置事務模板對象-->
-    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
-        <property name="transactionManager" ref="transactionManager"/>
-    </bean>
-
-
-
-    <!--配置一切面類-->
-    <bean id="myAspect" class="com.cyl.spring.aspect.MyAspect"/>
+    <!--2.配置事務策略-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="list*" read-only="true"/>
+            <tx:method name=""/>
+        </tx:attributes>
+    </tx:advice>
+    
+    <!--3.配置事務控制的範圍-->
     <aop:config>
-        <aop:pointcut id="myPointCut" expression="execution(* com.cyl.spring.service.impl.*.*(..))"/>
-        <aop:aspect ref="myAspect">
-            <aop:before method="before" pointcut-ref="myPointCut"/>
-            <aop:after method="after" pointcut-ref="myPointCut"/>
-        </aop:aspect>
+        <aop:pointcut id="fooService" expression="execution(* com.cyl.spring.service.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="fooService"/>
     </aop:config>
 </beans>

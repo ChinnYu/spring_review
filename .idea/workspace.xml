@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="456e9ff8-f1a1-488f-9853-b157d665f356" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_hello_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_hello_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/TeacherServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JdbcTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DaoTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SpringAOPTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/dao/impl/TeacherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cyl/spring/dao/impl/TeacherDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/entity/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cyl/spring/entity/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cyl/spring/service/impl/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cyl/spring/service/impl/TeacherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/JdbcTemplateTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SpringAOPTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/JdbcTemplateTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DaoTemplateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="78" column="29" lean-forward="true" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+            <state relative-caret-position="259">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,11 +40,91 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DaoTest2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1874">
+              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
-              <caret line="37" column="68" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="68" />
+              <caret line="65" column="17" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="65" selection-end-column="17" />
+              <folding>
+                <element signature="e#1243#1264#0" expanded="true" />
+                <element signature="e#1306#1323#0" expanded="true" />
+                <element signature="e#1362#1376#0" expanded="true" />
+                <element signature="e#1419#1437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/properties/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/TeacherServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="290">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,15 +186,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/test/java/SpringAOPTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/aspect/MyAspect.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/ITeacherDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDaoOld.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/ITeacherService.java" />
         <option value="$PROJECT_DIR$/src/test/java/JdbcTemplateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/DaoTemplateTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/DaoTest2.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -184,6 +281,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -216,6 +322,23 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_hello" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -227,7 +350,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572946373234" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572999163575" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -258,52 +381,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcTemplateTest.txTest">
-    <configuration name="JdbcTemplateTest.codingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DaoTemplateTest.serviceTest">
+    <configuration name="DaoTemplateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_hello" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcTemplateTest" />
-      <option name="METHOD_NAME" value="codingTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="DaoTemplateTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateTest.doTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaoTemplateTest.doTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_hello" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcTemplateTest" />
+      <option name="MAIN_CLASS_NAME" value="DaoTemplateTest" />
       <option name="METHOD_NAME" value="doTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateTest.txTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaoTemplateTest.serviceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_hello" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcTemplateTest" />
+      <option name="MAIN_CLASS_NAME" value="DaoTemplateTest" />
+      <option name="METHOD_NAME" value="serviceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTemplateTest.txTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_hello" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DaoTemplateTest" />
       <option name="METHOD_NAME" value="txTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateTest.xmlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaoTest2.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_hello" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcTemplateTest" />
-      <option name="METHOD_NAME" value="xmlTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringAOPTest.aopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_hello" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SpringAOPTest" />
-      <option name="METHOD_NAME" value="aopTest" />
+      <option name="MAIN_CLASS_NAME" value="DaoTest2" />
+      <option name="METHOD_NAME" value="addTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -311,11 +433,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JdbcTemplateTest.txTest" />
-        <item itemvalue="JUnit.JdbcTemplateTest.doTest" />
-        <item itemvalue="JUnit.JdbcTemplateTest.xmlTest" />
-        <item itemvalue="JUnit.JdbcTemplateTest.codingTest" />
-        <item itemvalue="JUnit.SpringAOPTest.aopTest" />
+        <item itemvalue="JUnit.DaoTemplateTest.serviceTest" />
+        <item itemvalue="JUnit.DaoTemplateTest.doTest" />
+        <item itemvalue="JUnit.DaoTest2.addTest" />
+        <item itemvalue="JUnit.DaoTemplateTest" />
+        <item itemvalue="JUnit.DaoTemplateTest.txTest" />
       </list>
     </recent_temporary>
   </component>
@@ -329,44 +451,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572690415912</updated>
-      <workItem from="1572690419505" duration="58035000" />
+      <workItem from="1572690419505" duration="69306000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 13h 54m 51s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTemplateTest_doTest - 2019.11.05 at 23h 12m 17s.xml">
+      <configuration name="DaoTemplateTest.doTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 13h 56m 08s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTemplateTest_serviceTest - 2019.11.05 at 23h 23m 36s.xml">
+      <configuration name="DaoTemplateTest.serviceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 14h 15m 34s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTest2_addTest - 2019.11.05 at 23h 30m 26s.xml">
+      <configuration name="DaoTest2.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 16h 09m 31s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTest2_addTest - 2019.11.05 at 23h 31m 09s.xml">
+      <configuration name="DaoTest2.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 16h 13m 09s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTest2_addTest - 2019.11.05 at 23h 31m 52s.xml">
+      <configuration name="DaoTest2.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 16h 14m 35s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTest2_addTest - 2019.11.05 at 23h 33m 18s.xml">
+      <configuration name="DaoTest2.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 16h 38m 33s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTest2_addTest - 2019.11.05 at 23h 33m 55s.xml">
+      <configuration name="DaoTest2.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 16h 38m 58s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTest2_addTest - 2019.11.05 at 23h 34m 50s.xml">
+      <configuration name="DaoTest2.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 17h 19m 16s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTemplateTest_doTest - 2019.11.05 at 23h 37m 06s.xml">
+      <configuration name="DaoTemplateTest.doTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JdbcTemplateTest_txTest - 2019.11.05 at 17h 20m 54s.xml">
-      <configuration name="JdbcTemplateTest.txTest" configurationId="JUnit" />
+    <history-entry file="DaoTemplateTest_serviceTest - 2019.11.05 at 23h 39m 19s.xml">
+      <configuration name="DaoTemplateTest.serviceTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58035000" />
+    <option name="totallyTimeSpent" value="69306000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -400,7 +522,7 @@
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.3286334" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.3286334" />
@@ -603,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="107" column="21" lean-forward="true" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SpringAOPTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3">
@@ -620,11 +735,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDaoOld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/ITeacherDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/ITeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DaoTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1874">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="65" column="17" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="65" selection-end-column="17" />
+          <folding>
+            <element signature="e#1243#1264#0" expanded="true" />
+            <element signature="e#1306#1323#0" expanded="true" />
+            <element signature="e#1362#1376#0" expanded="true" />
+            <element signature="e#1419#1437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/entity/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="158">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
+            <element signature="e#198#199#0" expanded="true" />
             <element signature="e#223#224#0" expanded="true" />
             <element signature="e#256#257#0" expanded="true" />
             <element signature="e#284#285#0" expanded="true" />
@@ -636,63 +841,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/ITeacherDao.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DaoTemplateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDaoOld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/ITeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/dao/impl/TeacherDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/JdbcTemplateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="78" column="29" lean-forward="true" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+        <state relative-caret-position="259">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyl/spring/service/impl/TeacherServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="37" column="68" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="68" />
         </state>
       </provider>
     </entry>

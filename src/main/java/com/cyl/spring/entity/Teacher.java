@@ -1,5 +1,7 @@
 package com.cyl.spring.entity;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author : Liu
  * @Date : 2019/11/4 下午 06:04

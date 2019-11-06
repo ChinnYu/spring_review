@@ -2,9 +2,12 @@ package com.cyl.spring.dao.impl;
 
 import com.cyl.spring.dao.ITeacherDao;
 import com.cyl.spring.entity.Teacher;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
+import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,15 +16,15 @@ import org.springframework.stereotype.Component;
  * @Description :
  */
 @Component
-public class TeacherDao extends JdbcDaoSupport implements ITeacherDao {
+public class TeacherDao extends HibernateDaoSupport implements ITeacherDao {
 
     @Autowired
-    public void setJ(JdbcTemplate jdbcTemplate){
-        super.setJdbcTemplate(jdbcTemplate);
+    public void setSf(SessionFactory sessionFactory){
+        super.setSessionFactory(sessionFactory);
     }
 
     public void add(Teacher teacher) {
-        this.getJdbcTemplate().update("insert into t_teacher(name) values (?)",teacher.getName());
+        this.getHibernateTemplate().save(teacher);
     }
 
     public void updata() {

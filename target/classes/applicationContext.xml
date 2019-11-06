@@ -18,23 +18,52 @@
     <context:component-scan base-package="com.cyl.spring"/>
     <!--<aop:aspectj-autoproxy/>-->
     <!--配置DBCP-->
+    <context:property-placeholder location="classpath:properties/jdbc.properties"/>
     <bean id="datasourceId" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/1803_hibernate"/>
-        <property name="user" value="root"/>
-        <property name="password" value="123"/>
-    </bean>
-    <!--配置JdbcTemplate-->
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <constructor-arg name="dataSource" ref="datasourceId"/>
+        <property name="driverClass" value="${jdbc.driverClass}"/>
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
     </bean>
 
-    <!--1.配置事務管理器-->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+
+
+    <!--管理session factory-->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="datasourceId"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.current_session_context_class">thread</prop>
+            </props>
+        </property>
+        <property name="mappingLocations" value="classpath:com/cyl/spring/entity/*.hbm.xml"/>
     </bean>
 
-    <!--開啟註解式的事務控制-->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <!--事務配置-->
+    <!--1.配置事務管理器-->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
 
+
+    <!--2.配置事務策略-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="list*" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED" read-only="false"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--3.配置事務控制的範圍-->
+    <aop:config>
+        <aop:pointcut id="fooService" expression="execution(* com.cyl.spring.service.impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="fooService"/>
+    </aop:config>
+
+    <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
 </beans>

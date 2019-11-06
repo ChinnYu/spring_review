@@ -24,19 +24,19 @@ public class TeacherServiceImpl implements ITeacherService {
 
     @Autowired
     private ITeacherDao teacherDao;
-    @Transactional()
+
     public void add() {
 //        transactionTemplate.execute(new TransactionCallback<Object>() {
 //
 //            public Object doInTransaction(TransactionStatus transactionStatus) {
                 Teacher t1 = new Teacher();
-                t1.setName("applewww");
+                t1.setName("applewww123");
                 teacherDao.add(t1);
 
                 //中間發生異常
-//                int i =1/0;
+                int i =1/0;
                 Teacher t2 = new Teacher();
-                t2.setName("apple2ww");
+                t2.setName("apple2ww123");
                 teacherDao.add(t2);
                 teacherDao.add(t2);
 //                return null;
